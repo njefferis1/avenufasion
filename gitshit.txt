@@ -1,0 +1,4 @@
+open new folder in VSCode
+open terminal  ctrl + ~
+> git init
+> git clone https://github.com/dominait/css-static-site-starter.git
