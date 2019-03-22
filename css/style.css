@@ -1,0 +1,118 @@
+/* TYPOGRAPHY */
+
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('../fonts/Montserrat/montserrat-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/Montserrat/montserrat-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/Montserrat/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* some p tags */
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* BODY */
+body{
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+/* NAV */
+.site-nav{
+    padding: .5rem 1rem;
+}
+.icon-view{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-icon{
+    width: 1.5rem;
+}
+.list-view{
+    display: none;
+}
+.avenue-brand{
+    font-size: 1.125rem;
+    color: #333333;
+    font-weight: 300;
+}
+.avenue-brand span{
+    font-weight: 700;
+}
+@media(min-width:720px){
+    .menu-icon{
+        display: none;
+    }
+    .list-view{
+        display: flex;
+    }
+    .list-view li{
+        margin: 0 1rem;
+    }
+}
+
+/* HEADER */
+.page-header{
+    background-image: linear-gradient(rgba(83, 83, 83, 0.397), rgba(128, 128, 128, 0.384)), url('../img/banners/header-sm.jpg') center / cover no-repeat;
+    padding: 8rem 0;
+    color: #fff;
+    text-align: center;
+}
+.title{
+    font-size: calc(2rem + 2vw);
+    line-height: 2rem;
+}
+.tagline{
+    font-size: calc(1.25rem + 0.5vw);
+}
+
+@media(min-width: 800px){
+    .page-header{
+        background-image: linear-gradient(rgba(83, 83, 83, 0.5), rgba(128, 128, 128, 0.384)), url('../img/banners/header-lg.jpg') center / cover no-repeat;
+        padding: 8rem 0;
+    }
+}
+
+/* MAIN */
+/* form */
+.avenue-client-reg{
+    padding: 1rem;
+}
+.avenue-client-reg div{
+    border: 1px solid #777777;
+    padding: 1rem;
+}
