@@ -22,70 +22,125 @@
         font-family: "Montserrat";
         font-size: 1rem;
     }
+    h1{
+        width: 100%;
+    }
 }
-
+.message{
+    textarea{
+        width: 100%;
+    }
+}
+.sign-up{
+    grid-area: signup;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    label{
+        display: inline;
+        padding-left: 0.25rem;
+    }
+    input[type='checkbox']{
+        width: inherit;
+        display: inline-block;
+        border: 3px solid green;
+        vertical-align: middle;
+    }
+    div{
+        width: calc(33% - 0.7rem);
+    }
+    h2{
+        width: 100%;
+    }
+}
+.preferences{
+    grid-area: pref;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div{
+        width: calc(50% - 1.125rem);
+        margin: 1.125rem 0;
+    }
+    h2{
+        width: 100%;
+    }
+}
 
 @media(min-width:720px){
     .avenue-client-reg{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1rem;
+        grid-column-gap: 1.5rem;
         grid-template-areas: 
         "firstname lastname"
         "email email"
         "password confirm"
         "frequency phone"
         "terms terms"
-        "message message";
+        "message message"
+        "signup signup"
+        "pref pref";
 
-        :nth-child(1){
+        .firstname{
             grid-area: firstname;
         }
-        :nth-child(2){
+        .lastname{
             grid-area: lastname;
         }
-        :nth-child(3){
+        .email{
             grid-area: email;
         }
-        :nth-child(4){
+        .password{
             grid-area: password;
         }
-        :nth-child(5){
+        .confirm-password{
             grid-area: confirm;
         }
-        :nth-child(6){
+        .email-frequency{
             grid-area: frequency;
         }
-        :nth-child(7){
+        .phone-number{
             grid-area: phone;
         }
-        :nth-child(8){
+        .fine-print{
             grid-area: terms;
         }
-        :nth-child(9){
+        .message{
             grid-area: message;
+            textarea{
+                width: 100%;
+            }
+        }
+        .sign-up{
+            grid-area: signup;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            label{
+                display: inline;
+                padding-left: 0.25rem;
+            }
+            input[type='checkbox']{
+                width: inherit;
+                display: inline-block;
+                border: 3px solid green;
+                vertical-align: middle;
+            }
+            div{
+                width: calc(33% - 0.5rem);
+            }
+        }
+        .preferences{
+            grid-area: pref;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                width: calc(50% - 1.125rem);
+                margin: 1.125rem 0;
+            }
         }
 
-        // div:nth-child(1){
-        //     // grid-column: 1/3;
-        //     // grid-row: 1/3;
-        //     background: tomato;
-        //     // grid-area: sidebar;
-        // }
-        // :nth-child(2){
-        //     background: teal;
-        //     // grid-area: header;
-        // }
-        // :nth-child(3){
-        //     background: cornflowerblue;
-        //     // grid-area: footer;
-        // }
-        // :nth-child(4){
-        //     background: #da3aaa;
-        //     // grid-column: span 2;
-        //     // grid-column: 1/2;
-        //     // grid-row: 1/3; 
-        //     // grid-area: main;
-        // }
     }
 }

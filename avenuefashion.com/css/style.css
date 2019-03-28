@@ -646,62 +646,169 @@ h6 {
   font-size: 1rem;
 }
 
+.avenue-client-reg h1 {
+  width: 100%;
+}
+
+.message textarea {
+  width: 100%;
+}
+
+.sign-up {
+  grid-area: signup;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sign-up label {
+  display: inline;
+  padding-left: 0.25rem;
+}
+
+.sign-up input[type='checkbox'] {
+  width: inherit;
+  display: inline-block;
+  border: 3px solid green;
+  vertical-align: middle;
+}
+
+.sign-up div {
+  width: calc(33% - 0.7rem);
+}
+
+.sign-up h2 {
+  width: 100%;
+}
+
+.preferences {
+  grid-area: pref;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.preferences div {
+  width: calc(50% - 1.125rem);
+  margin: 1.125rem 0;
+}
+
+.preferences h2 {
+  width: 100%;
+}
+
 @media (min-width: 720px) {
   .avenue-client-reg {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-        grid-template-areas: "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message";
+    grid-column-gap: 1.5rem;
+        grid-template-areas: "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message" "signup signup" "pref pref";
   }
-  .avenue-client-reg :nth-child(1) {
+  .avenue-client-reg .firstname {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: firstname;
   }
-  .avenue-client-reg :nth-child(2) {
+  .avenue-client-reg .lastname {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: lastname;
   }
-  .avenue-client-reg :nth-child(3) {
+  .avenue-client-reg .email {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: email;
   }
-  .avenue-client-reg :nth-child(4) {
+  .avenue-client-reg .password {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: password;
   }
-  .avenue-client-reg :nth-child(5) {
+  .avenue-client-reg .confirm-password {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: confirm;
   }
-  .avenue-client-reg :nth-child(6) {
+  .avenue-client-reg .email-frequency {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: frequency;
   }
-  .avenue-client-reg :nth-child(7) {
+  .avenue-client-reg .phone-number {
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: phone;
   }
-  .avenue-client-reg :nth-child(8) {
+  .avenue-client-reg .fine-print {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: terms;
   }
-  .avenue-client-reg :nth-child(9) {
+  .avenue-client-reg .message {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: message;
+  }
+  .avenue-client-reg .message textarea {
+    width: 100%;
+  }
+  .avenue-client-reg .sign-up {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: signup;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .avenue-client-reg .sign-up label {
+    display: inline;
+    padding-left: 0.25rem;
+  }
+  .avenue-client-reg .sign-up input[type='checkbox'] {
+    width: inherit;
+    display: inline-block;
+    border: 3px solid green;
+    vertical-align: middle;
+  }
+  .avenue-client-reg .sign-up div {
+    width: calc(33% - 0.5rem);
+  }
+  .avenue-client-reg .preferences {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: pref;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .avenue-client-reg .preferences div {
+    width: calc(50% - 1.125rem);
+    margin: 1.125rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

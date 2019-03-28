@@ -32,7 +32,7 @@
     </header>
     <main>
         <aside>
-           <header> <h1>REGISTER</h1></header>
+            <h1>REGISTER</h1>
             <form id="avenue-client-reg" class="avenue-client-reg">
                 <div class="first-name">
                     <label for="firstName">First Name</label>
@@ -55,6 +55,16 @@
                     <input id="conf-pass" type="text">
                 </div>
                 <div class="email-frequency">
+                    
+                    <!-- <style>
+                        select{
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            background: url(../img/menu.svg) no-repeat;
+                        }
+                    </style> -->
+
                     <label for="">Email Frequency</label>
                     <select name="" id="">
                         <option value="no">no</option>
@@ -67,12 +77,101 @@
                     <input id="phoneNumber" type="text">
                 </div>
                 <div class="fine-print">
-                    <input id="email" type="radio"> I agree to the terms and conditions of the website. I may opt out at any time.
+                    <!-- <input id="email" type="radio"> <label for="">I agree to the terms and conditions of the website. I may opt out at any time.</label> -->
+                    
+                    <!-- <style>
+                        .radio-button{
+                            display: inline;
+                        }
+                        .dot{
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 50%;
+                            background: grey;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .inner-dot{
+                            width: 35%;
+                            height: 35%;
+                            border-radius: 50%;
+                            background: black;
+                        }
+                        .label{
+                            display: inline;
+                        }
+                    </style>
+                    <div class="radio-button">
+                        <div id="dot" class="dot" data-checked="true">
+                            <div id="inner-dot" class="inner-dot"></div>
+                        </div>
+                        <label class=".label" for="">dfg dfg dfg </label>
+                    </div>
+                    <script>
+                        const dot = document.querySelector('#dot');
+                        const innerDot = document.querySelector('#inner-dot');
+                        console.log(dot.dataset.checked)
+                        dot.addEventListener('click', ()=>{
+                            innerDot.classList.toggle('inner-dot')
+                        })
+                    </script> -->
+
                 </div>
+
                 <div class="message">
                     <label for="">Message</label><br/>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
+
+                <div class="sign-up">
+                    <h2>Sign up for</h2>
+                    <div class="updates">
+                        <input type="checkbox" id="updates"><label for="updates">exclusive updates</label>
+                    </div>
+                    <div class="discounts">
+                        <input type="checkbox" id="discounts"><label for="discounts">discounts/sales</label>
+                    </div>
+                    <div class="new-arrivals">
+                        <input type="checkbox" id="new-arrivals"><label for="new-arrivals">new arrivals</label>
+                    </div>
+                    <div class="contests">
+                        <input type="checkbox" id="contests"><label for="contests">contests</label>
+                    </div>
+                    <div class="everything">
+                        <input type="checkbox" id="everything"><label for="everything">everything</label>
+                    </div>
+                    <div class="coupons">
+                        <input type="checkbox" id="coupons"><label for="coupons">coupons</label>
+                    </div>
+                </div>
+
+                <div class="preferences">
+                    <h2>Preferences (optional)</h2>
+                    <div class="language">
+                        <label for="language">language</label>
+                        <select name="" id="language">
+                            <option value="english">English</option>
+                        </select>
+                    </div>
+                    <div class="clothing-size">
+                        <label for="clothing-size">Clothing Size</label>
+                        <select name="" id="clothing-size">
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                    <div class="store-locator">
+                        <label for="store-locator">Store Locator</label>
+                        <select name="" id="store-locator">
+                            <option value="edmonton">Edmonton</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="submit-form">
+                    <input type="submit" value="CREATE ACCOUNT">
+                </div>
+
             </form>
         </aside>
     </main>
