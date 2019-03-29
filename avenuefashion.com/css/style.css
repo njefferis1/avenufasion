@@ -629,7 +629,8 @@ h6 {
   max-width: 800px;
 }
 
-.avenue-client-reg input, .avenue-client-reg select {
+.avenue-client-reg input,
+.avenue-client-reg select {
   background: #fff;
   border: 1px solid #777777;
   width: 100%;
@@ -670,7 +671,7 @@ h6 {
   padding-left: 0.25rem;
 }
 
-.sign-up input[type='checkbox'] {
+.sign-up input[type="checkbox"] {
   width: inherit;
   display: inline-block;
   border: 3px solid green;
@@ -706,6 +707,19 @@ h6 {
   width: 100%;
 }
 
+.submit-form {
+  display: block;
+}
+
+.submit-form input {
+  width: 260px;
+  height: 60px;
+  font-weight: bold;
+  color: #454647;
+  border: 2px solid #737373;
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 720px) {
   .avenue-client-reg {
     display: -ms-grid;
@@ -713,7 +727,7 @@ h6 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
-        grid-template-areas: "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message" "signup signup" "pref pref";
+        grid-template-areas: "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message" "signup signup" "pref pref" "create create" "help help";
   }
   .avenue-client-reg .firstname {
     -ms-grid-row: 1;
@@ -783,7 +797,7 @@ h6 {
     display: inline;
     padding-left: 0.25rem;
   }
-  .avenue-client-reg .sign-up input[type='checkbox'] {
+  .avenue-client-reg .sign-up input[type="checkbox"] {
     width: inherit;
     display: inline-block;
     border: 3px solid green;
@@ -810,5 +824,46 @@ h6 {
     width: calc(50% - 1.125rem);
     margin: 1.125rem 0;
   }
+  .avenue-client-reg .submit-form {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: create;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .avenue-client-reg .submit-form input {
+    width: 50%;
+    margin-right: 8rem;
+  }
+  .avenue-client-reg .help {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: help;
+  }
+}
+
+footer {
+  background: #f8f8f8;
+}
+
+footer footer {
+  background: #333;
+}
+
+.site-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
