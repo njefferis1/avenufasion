@@ -569,13 +569,22 @@ h6 {
   display: none;
 }
 
-.avenu-brand {
+.list-view a {
+  color: #333;
+}
+
+.list-view a:hover {
+  color: #00c8c8;
+  text-decoration: none;
+}
+
+.avenue-brand {
   font-size: 1.125rem;
   font-weight: 300;
   color: #333;
 }
 
-.avenu-brand span {
+.avenue-brand span {
   font-weight: 700;
 }
 
@@ -624,6 +633,10 @@ h6 {
   margin: 0 auto;
 }
 
+.avenue-client-reg div {
+  margin-top: 1.2rem;
+}
+
 .fine-print {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,6 +654,7 @@ h6 {
   -webkit-box-flex: 90%;
       -ms-flex: 90%;
           flex: 90%;
+  color: #999;
 }
 
 .inline {
@@ -671,7 +685,7 @@ h6 {
 }
 
 .avenue-client-reg h1 {
-  width: 100%;
+  font-weight: bold;
 }
 
 .message textarea {
@@ -743,6 +757,31 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+.blueT {
+  color: #00c8c8;
+}
+
+form a {
+  text-decoration: none;
+  color: #00c8c8;
+}
+
+form a:hover {
+  color: #00e1ff;
+}
+
+form h2 {
+  font-weight: bold;
+}
+
+.avenue-client-reg select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../img/chevron-down-solid.svg") no-repeat;
+  background-position: right;
+}
+
 @media (min-width: 720px) {
   .avenue-client-reg {
     display: -ms-grid;
@@ -750,52 +789,58 @@ h6 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
-        grid-template-areas: "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message" "signup signup" "pref pref" "create create" "help help";
+        grid-template-areas: "reg reg" "firstname lastname" "email email" "password confirm" "frequency phone" "terms terms" "message message" "signup signup" "pref pref" "create create" "help help";
+  }
+  .avenue-client-reg .reg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: reg;
   }
   .avenue-client-reg .firstname {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: firstname;
   }
   .avenue-client-reg .lastname {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: lastname;
   }
   .avenue-client-reg .email {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: email;
   }
   .avenue-client-reg .password {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: password;
   }
   .avenue-client-reg .confirm-password {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: confirm;
   }
   .avenue-client-reg .email-frequency {
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: frequency;
   }
   .avenue-client-reg .phone-number {
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: phone;
   }
   .avenue-client-reg .fine-print {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: terms;
   }
   .avenue-client-reg .message {
-    -ms-grid-row: 6;
+    -ms-grid-row: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: message;
@@ -804,7 +849,7 @@ h6 {
     width: 100%;
   }
   .avenue-client-reg .sign-up {
-    -ms-grid-row: 7;
+    -ms-grid-row: 8;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: signup;
@@ -830,7 +875,7 @@ h6 {
     width: calc(33% - 0.5rem);
   }
   .avenue-client-reg .preferences {
-    -ms-grid-row: 8;
+    -ms-grid-row: 9;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: pref;
@@ -848,7 +893,7 @@ h6 {
     margin: 1.125rem 0;
   }
   .avenue-client-reg .submit-form {
-    -ms-grid-row: 9;
+    -ms-grid-row: 10;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: create;
@@ -864,7 +909,7 @@ h6 {
     margin-right: 8rem;
   }
   .avenue-client-reg .help {
-    -ms-grid-row: 10;
+    -ms-grid-row: 11;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: help;
@@ -878,6 +923,22 @@ footer {
 
 footer footer {
   background: #333;
+  color: #999;
+  font-size: 10px;
+  padding: 5px 3px;
+}
+
+footer h3 {
+  font-weight: bold;
+}
+
+footer a {
+  color: #333;
+}
+
+footer a:hover {
+  color: #00c8c8;
+  text-decoration: none;
 }
 
 .site-links {
@@ -891,6 +952,7 @@ footer footer {
           justify-content: space-between;
   width: 80vw;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .site-links .info,
@@ -907,17 +969,28 @@ footer footer {
 .award {
   width: 400px;
   height: 140px;
-  background: #00c8c8;
+  background: #333;
   text-align: center;
   padding-top: 30px;
   margin: 0 auto;
   margin-bottom: 30px;
+  color: #fff;
+}
+
+.award h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.award p {
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .social-media {
   width: 400px;
   height: 140px;
-  background: #333;
+  background: #00c8c8;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -926,6 +999,11 @@ footer footer {
 .social-media img {
   width: 50px;
   margin-top: 40px;
+  margin-right: 25px;
+}
+
+.social-media img:last-of-type {
+  margin-right: 0;
 }
 
 .social-media .facebook {
@@ -940,6 +1018,22 @@ footer footer {
     -webkit-box-flex: 25%;
         -ms-flex: 25%;
             flex: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .vert-hore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  .vert-hore .award {
+    margin-left: 15vw;
+  }
+  .vert-hore .social-media {
+    margin-right: 15vw;
+    margin-left: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

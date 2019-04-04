@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Avenue Fashion Client Sign Up</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
 
@@ -15,16 +16,17 @@
         <ul class="icon-view">
             <li class="avenue-brand">
                 <h1>
-                    <span>Avenue</span> Fashion</h1>
+                    <span>Avenue</span> Fashion
+                </h1>
             </li>
             <li>
                 <img class="menu-icon" src="img/menu.svg" alt="">
                 <ul class="list-view">
                     <li><a href="#">mens</a></li>
-                    <li>womens</li>
-                    <li>the brand</li>
-                    <li>local stores</li>
-                    <li>look book</li>
+                    <li><a href="#">womens</a></li>
+                    <li><a href="#">the brand</a></li>
+                    <li><a href="#">local stores</a></li>
+                    <li><a href="#">look book</a></li>
                 </ul>
             </li>
         </ul>
@@ -36,14 +38,16 @@
     </header>
     <main>
         <aside>
-            <h1>REGISTER</h1>
+            
             <form id="avenue-client-reg" class="avenue-client-reg">
+                <h1 class="reg">REGISTER</h1>
                 <div class="first-name">
+                    
                     <label for="firstName">First Name</label>
                     <input id="firstName" type="text">
                 </div>
                 <div class="last-name">
-                    <label for="lastName">last Name</label>
+                    <label for="lastName">Last Name</label>
                     <input id="lastName" type="text">
                 </div>
                 <div class="email">
@@ -71,9 +75,11 @@
 
                     <label for="">Email Frequency</label>
                     <select name="" id="">
-                        <option value="no">no</option>
-                        <option value="yea">yes</option>
+                        <option value="daily">daily</option>
                         <option value="weekly">weekly</option>
+                        <option value="monthly">monthly</option>
+                        <option value="yearly">yearly</option>
+                        <option value="nope">I don't want to recieve emails</option>
                     </select>
                 </div>
                 <div class="phone-number">
@@ -84,7 +90,7 @@
                 </div>
                 <div class="fine-print">
                     <input id="email" type="radio"> 
-                    <p class="inline">I agree to the terms and conditions of the website. I may opt out at any time.</p>
+                    <p class="inline">I agree to the terms and conditions of the website. I am trapped forever.</p>
 
                     <!-- <style>
                         .radio-button{
@@ -166,30 +172,34 @@
                         <label for="language">language</label>
                         <select name="" id="language">
                             <option value="english">English</option>
+                            <option value="notE">Not English</option>
                         </select>
                     </div>
                     <div class="clothing-size">
                         <label for="clothing-size">Clothing Size</label>
                         <select name="" id="clothing-size">
                             <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
                         </select>
                     </div>
                     <div class="store-locator">
                         <label for="store-locator">Store Locator</label>
                         <select name="" id="store-locator">
                             <option value="edmonton">Edmonton</option>
+                            <option value="notedmonton">Not Edmonton</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="submit-form">
                     <input type="submit" value="CREATE ACCOUNT">
-                    <p>By clicking 'Create Account', you agree to our Privacy Policy -Arrow-</p>
+                    <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy <i class="fas fa-long-arrow-alt-right"></i></a></p>
                 </div>
                 <br/>
                 <div class="help">
-                    <h2>NEED HELP?</h2>
-                    <p>If you have questions about your account, please contact customer service 24 hours a day 7 days a week. 1-888-555-5555</p>
+                    <h2 class="blueT">NEED HELP?</h2>
+                    <p>If you have questions about your account, please contact <a href="#">customer service</a> 24 hours a day 7 days a week. <span class="blueT">1-888-555-5555</span></p>
                 </div>
 
             </form>
@@ -241,7 +251,7 @@
         <div class="vert-hore">
             <aside class="award">
                 <h1>AWARD WINNER</h1>
-                <p>FASION AWARDS 2016</p>
+                <p>FASHION AWARDS 2016</p>
             </aside>
     
             <aside class="social-media">
@@ -252,7 +262,9 @@
             </aside>
         </div>
         
-        <footer>@2016 Avenue Fasion&trade;</footer>
+        <footer>
+            <p>@2016 Avenue Fashion&trade;</p>
+        </footer>
     </footer>
 </body>
 

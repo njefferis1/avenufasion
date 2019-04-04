@@ -3,6 +3,19 @@ footer{
     margin: 0 auto;
     footer{
         background: #333;
+        color: #999;
+        font-size: 10px;
+        padding: 5px 3px;
+    }
+    h3{
+        font-weight: bold;
+    }
+    a{
+        color: #333;
+    }
+    a:hover{
+        color: #00c8c8;
+        text-decoration: none;
     }
 }
 .site-links{
@@ -11,6 +24,7 @@ footer{
     justify-content: space-between;
     width: 80vw; //this is whats keeping the left boses off the wall
     margin: 0 auto; //^^^ and this one too
+    padding-top: 30px;
     .info,
     .why-buy,
     .lookbook,
@@ -23,22 +37,35 @@ footer{
 .award{
     width: 400px;
     height: 140px;
-    background: #00c8c8;
+    background: #333;
     text-align: center;
     padding-top: 30px;
     margin: 0 auto;
     margin-bottom: 30px;
+    color: #fff;
+    h1{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 22px;
+        font-weight: 300;
+    }
 }
 .social-media{
     width: 400px;
     height: 140px;
-    background: #333;
+    background: #00c8c8;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
     img{
         width: 50px;
         margin-top: 40px;
+        margin-right: 25px;
+    }
+    img:last-of-type{
+        margin-right: 0;
     }
     .facebook{
         width: 25px;
@@ -54,5 +81,17 @@ footer{
             flex: 25%;
         }
     }
-    
+}
+@media(min-width:800px){
+    .vert-hore{
+        display: flex;
+        margin: 0 auto;
+        .award{
+            margin-left: 15vw;
+        }
+        .social-media{
+            margin-right: 15vw;
+            margin-left: 15px;
+        }
+    }
 }

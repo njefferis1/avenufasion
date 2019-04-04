@@ -11,8 +11,15 @@
 }
 .list-view{
     display:none;
+    a{
+        color: #333;
+    }
+    a:hover{
+        color: #00c8c8;
+        text-decoration: none;
+    }
 }
-.avenu-brand{
+.avenue-brand{
     font-size:1.125rem;
     font-weight: 300;    
     color:#333;

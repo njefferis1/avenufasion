@@ -2,6 +2,9 @@
       padding: 1rem;
       max-width: 960px;
       margin: 0 auto;
+      div{
+            margin-top: 1.2rem;
+      }
 }
 .fine-print{
       display: flex;
@@ -12,6 +15,7 @@
       }
       p{
             flex: 90%;
+            color: #999;
       }
 }
 .inline{
@@ -38,7 +42,7 @@
             font-size: 1rem;
       }
       h1 {
-            width: 100%;
+            font-weight: bold;
       }
 }
 .message {
@@ -92,6 +96,32 @@
             margin-bottom: 1.5rem;
       }
 }
+.blueT{
+      color: #00c8c8;
+}
+form{
+      a{
+            text-decoration: none;
+            color: #00c8c8;
+      }
+      a:hover{
+            color: #00e1ff;
+      }
+      h2{
+            font-weight: bold;
+      }
+}
+
+.avenue-client-reg{
+      select{
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none; 
+            background: url("../img/chevron-down-solid.svg") no-repeat;
+            background-position: right;
+      }
+      
+}
 
 @media (min-width: 720px) {
       .avenue-client-reg {
@@ -99,6 +129,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 1.5rem;
             grid-template-areas:
+                  "reg reg"
                   "firstname lastname"
                   "email email"
                   "password confirm"
@@ -109,7 +140,9 @@
                   "pref pref"
                   "create create"
                   "help help";
-
+            .reg{
+                  grid-area: reg;
+            }
             .firstname {
                   grid-area: firstname;
             }
