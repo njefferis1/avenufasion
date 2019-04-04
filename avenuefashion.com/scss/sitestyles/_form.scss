@@ -3,6 +3,20 @@
       max-width: 960px;
       margin: 0 auto;
 }
+.fine-print{
+      display: flex;
+
+      input{
+            width: 1rem;
+            flex: 10%;
+      }
+      p{
+            flex: 90%;
+      }
+}
+.inline{
+      display: inline;
+}
 .avenue-client-reg {
       margin: 0 auto;
       max-width: 800px;

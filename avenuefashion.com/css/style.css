@@ -624,6 +624,29 @@ h6 {
   margin: 0 auto;
 }
 
+.fine-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fine-print input {
+  width: 1rem;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+.fine-print p {
+  -webkit-box-flex: 90%;
+      -ms-flex: 90%;
+          flex: 90%;
+}
+
+.inline {
+  display: inline;
+}
+
 .avenue-client-reg {
   margin: 0 auto;
   max-width: 800px;
@@ -850,6 +873,7 @@ h6 {
 
 footer {
   background: #f8f8f8;
+  margin: 0 auto;
 }
 
 footer footer {
@@ -865,5 +889,57 @@ footer footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.site-links .info,
+.site-links .why-buy,
+.site-links .lookbook,
+.site-links .contact-deets {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  text-align: left;
+  margin-bottom: 75px;
+}
+
+.award {
+  width: 400px;
+  height: 140px;
+  background: #00c8c8;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.social-media {
+  width: 400px;
+  height: 140px;
+  background: #333;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.social-media img {
+  width: 50px;
+  margin-top: 40px;
+}
+
+.social-media .facebook {
+  width: 25px;
+}
+
+@media (min-width: 720px) {
+  .site-links .info,
+  .site-links .why-buy,
+  .site-links .lookbook,
+  .site-links .contact-deets {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
